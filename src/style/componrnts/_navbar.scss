@@ -1,0 +1,59 @@
+
+.navbar{
+    height: 10rem;
+    @include Flex;
+    background: linear-gradient(270deg, rgba(67,154,151,1) 0%, rgba(175,246,222,1) 100%);
+    position: relative;
+    z-index: 100;
+
+    &-wrapper{
+       @include Flex_Btn;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       height: 10rem;
+       padding: 1rem 2rem;
+       background: linear-gradient(270deg, rgba(67,154,151,1) 0%, rgba(175,246,222,1) 100%);
+    }
+    &-logo{
+        font-size: 4rem;
+        font-weight: 300;
+        color: darkblue;
+        text-shadow: -2px 2px 10px 1px rgba(0,0,0, .1), 2px -2px 10px 1px rgba(0,0,0, .1);
+    }
+
+    &-search{
+        input{
+            padding:  1.2rem 2rem;
+            width: 60rem;
+            border: none;
+            outline: none;
+            border-radius: .5rem;
+            font-size: 2rem;
+            background-color: white;
+            box-shadow: -2px 2px 10px 1px rgba(0,0,0, .1), 2px -2px 10px 1px rgba(0,0,0, .1);
+
+            &::placeholder{
+                font-size: 1.8rem;
+                color: darkblue;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-control{
+        padding: 1rem 2rem;
+        background-color: rgba(255,255,255, .5);
+        border-radius: .5rem;
+        @include Flex;
+        width: 12rem;
+        cursor: pointer;
+        box-shadow: -2px 2px 10px 1px rgba(0,0,0, .1), 2px -2px 10px 1px rgba(0,0,0, .1);
+    }
+    &-link{
+        @include Flex_Btn;
+        width: 100%;
+        color: darkblue;
+        font-size: 3rem;
+    }
+}

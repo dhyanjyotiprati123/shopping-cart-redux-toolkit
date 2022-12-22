@@ -1,0 +1,56 @@
+
+.card{
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 2px -2px 20px 2px rgba(0,0,0,.2), -2px 2px 20px 2px rgba(0,0,0,.2);
+
+    &-figure{
+        width: 100%;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+
+    &-info{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        span{
+            margin: 0 .5rem;
+
+            &:first-child{
+                margin: 0;
+            }
+        }
+    }
+
+    &-control{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+        justify-content: space-between;
+
+        button{
+            border: none;
+            outline: none;
+            padding: 1rem 1.5rem;
+            font-size: 1.8rem;
+            @include Flex;
+            gap: 1rem;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+    }
+    &-add{
+        background: #97DECE;
+    }
+    &-remove{
+        background: #FF597B;
+    }
+}

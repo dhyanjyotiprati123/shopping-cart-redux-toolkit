@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Inter', sans-serif;
+    font-weight: 400;
+    background: rgba(255,255,255, .01);
+}
+
+html{
+    font-size: 62.5%;
+
+     ::-webkit-scrollbar{
+        display: none;
+        width: 0;
+     }
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}

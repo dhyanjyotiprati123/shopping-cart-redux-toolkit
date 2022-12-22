@@ -1,0 +1,78 @@
+
+.sidebar{
+    padding: 3rem 1rem;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+
+    &-title{
+        text-align: center;
+        padding: 3rem 0;
+        font-size: 3.5rem;
+        font-weight: 200;
+        color: darkblue;
+    }
+
+    &-list{
+        padding: 3rem 2rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &-item{
+        font-size: 2rem;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        input{
+            border: none;
+            outline: none;
+        }
+        label{
+            color: darkblue;
+        }
+    }
+    &-rating{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        label{
+            font-size: 2rem;
+            color: darkblue;
+        }
+        span{
+            margin: 0 5px 0 5px;
+
+            &:first-child{
+                margin: 0;
+            }
+        }
+    }
+
+    &-clear{
+        padding: 3rem 1rem;
+        @include Flex;
+
+        button{
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 1.2rem 2rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+            width: 100%;
+            @include Flex;
+            gap: 1.2rem;
+            border-radius: .5rem;
+            color: darkblue;
+            background: linear-gradient(118deg, rgba(97,155,245,0.7147233893557423) 0%, rgba(154,242,226,0.8911939775910365) 100%);
+            box-shadow: -2px 2px 15px 1px rgba(0,0,0, .1), 2px -2px 15px 1px rgba(0,0,0, .1);
+        }
+    }
+}

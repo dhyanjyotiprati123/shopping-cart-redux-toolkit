@@ -1,0 +1,36 @@
+
+.cart{
+    min-height: calc(100vh - 100px);
+    display: flex;
+
+    &-items{
+        flex: 9;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem;
+    }
+    &-checkout{
+        flex: 3;
+        background: linear-gradient(0deg, rgba(175,246,222,1), rgba(67,154,151,1));
+        box-sizing: border-box;
+    }
+    &-wrapper{
+        padding: 3rem;
+        @include Flex;
+        flex-direction: column;
+        gap: 2rem;
+        color: white;
+
+        h1{
+            font-size: 3rem;
+            font-weight: 300;
+            color: darkblue;
+        }
+        h2{
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: darkblue;
+        }
+    }
+}

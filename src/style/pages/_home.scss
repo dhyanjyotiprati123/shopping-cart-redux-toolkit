@@ -1,0 +1,20 @@
+
+.home{
+    min-height: calc(100vh - 100px);
+    display: flex;
+
+    &-filters{
+        flex: 2;
+        background: linear-gradient(0deg, rgba(67,154,151,1) 0%, rgba(175,246,222,1) 100%);
+        position: relative;
+    }
+    &-main{
+        flex: 9;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        gap: 3rem;
+    }
+}

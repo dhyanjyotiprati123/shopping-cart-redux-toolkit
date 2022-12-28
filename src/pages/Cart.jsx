@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import CartCard from '../components/CartCard'
+import CartCard from '../components/CartCard';
+import {IoBagCheckOutline} from "react-icons/io5"
 
 const Cart = () => {
   const cart = useSelector(state => state.cart.cart);
@@ -23,6 +24,11 @@ const Cart = () => {
           <h1>Your Shopping Cart</h1>
           <h2>Subtotal ({cart.length}) Items</h2>
           <h2>Total: ₹ {total}</h2>
+
+          <button>
+            Checkout 
+            <span><IoBagCheckOutline size={28} /></span>
+          </button>
         </div>
       </div>
     </div>

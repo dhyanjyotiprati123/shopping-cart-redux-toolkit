@@ -527,6 +527,41 @@ html ::-webkit-scrollbar {
   color: darkblue;
 }
 
+.cart-wrapper button {
+  margin-top: 10rem;
+  border: none;
+  outline: none;
+  padding: 1.2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  border-radius: .5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2b5876), color-stop(51%, #4e4376), to(#2b5876));
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  cursor: pointer;
+}
+
+.cart-wrapper button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 .home {
   min-height: calc(100vh - 100px);
   display: -webkit-box;

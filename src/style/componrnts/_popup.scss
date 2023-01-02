@@ -1,0 +1,57 @@
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.2);
+    @include Flex;
+    z-index: 1000;
+
+    &-inner{
+        padding: 3rem;
+        border-radius: 1rem;
+        background: whitesmoke;
+        height: 64rem;
+        width: 60%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-main{
+        overflow-y: scroll;
+    }
+    &-close{
+        border: none;
+        outline: none;
+        background: none;
+        position: absolute;
+        top: 1.6rem;
+        right: 1.6rem;
+        cursor: pointer;
+    }
+    &-proceed{
+        @include Flex_Btn;
+        width: 100%;
+        padding: 0 3rem;
+
+        span{
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        button{
+            border: none;
+            outline: none;
+            padding: 1rem;
+            @include Flex;
+            gap: 1.2rem;
+            background: orange;
+            font-size: 1.6rem;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+    }
+}

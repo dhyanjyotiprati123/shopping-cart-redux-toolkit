@@ -1,0 +1,19 @@
+
+.popcard{
+    padding: 1.5rem;
+    background: white;
+    @include Flex_Btn;
+
+    &-figure{
+        width: 10rem;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    h1{
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+}

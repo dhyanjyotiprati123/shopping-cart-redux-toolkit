@@ -2,6 +2,8 @@
 .cart{
     min-height: calc(100vh - 100px);
     display: flex;
+    position: relative;
+
 
     &-items{
         flex: 9;
@@ -9,11 +11,14 @@
         flex-direction: column;
         gap: 3rem;
         padding: 3rem;
+        overflow-y: scroll;
     }
     &-checkout{
         flex: 3;
         background: linear-gradient(0deg, rgba(175,246,222,1), rgba(67,154,151,1));
         box-sizing: border-box;
+        position: relative;
+        @include Flex;
     }
     &-wrapper{
         padding: 3rem;
@@ -21,6 +26,9 @@
         flex-direction: column;
         gap: 2rem;
         color: white;
+        position: fixed;
+        top: 0;
+        height: 100%;
 
         h1{
             font-size: 3rem;

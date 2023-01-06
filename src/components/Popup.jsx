@@ -22,7 +22,7 @@ const Popup = (props) => {
         </div>
 
         <div className="popup-proceed">
-            <span>Total: {props.total}</span>
+            <span>Total: ₹ {props.total}</span>
             <button>
                Proceed To Payment
                <span><BsCreditCard size={24} /></span> 

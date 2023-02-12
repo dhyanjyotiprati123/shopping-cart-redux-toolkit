@@ -762,9 +762,9 @@ html ::-webkit-scrollbar {
 }
 
 .home-filters {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   background: -webkit-gradient(linear, left bottom, left top, from(#439a97), to(#aff6de));
   background: linear-gradient(0deg, #439a97 0%, #aff6de 100%);
   position: relative;
